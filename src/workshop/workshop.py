@@ -4,6 +4,7 @@ import random
 import requests
 import discord
 from discord.ext import commands
+from pprint import pprint
 
 client = commands.Bot(command_prefix='!')
 

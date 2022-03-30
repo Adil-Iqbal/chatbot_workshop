@@ -26,7 +26,7 @@ async def on_message(message):
     content = message.content[1:].split(" ")
     # -> ['add', '2', '3']
 
-    if len(content) >= 3:
+    if len(content) < 3:
         # Error: incorrect number of args
         await message.channel.send("I don't understand.")
         return
